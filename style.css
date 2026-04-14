@@ -150,3 +150,51 @@ header {
     margin-top: 50px;
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+
+    body {
+        background-attachment: scroll;
+    }
+
+    header {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .caixa {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .botao {
+        width: 80%;
+        font-size: 16px;
+    }
+
+    .todasfotos {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .foto, .foto2, .foto3 {
+        width: 90%;
+        margin: 20px 0;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .fotobrazuka, .fotomusculo, .fotoface {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .rodape {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
