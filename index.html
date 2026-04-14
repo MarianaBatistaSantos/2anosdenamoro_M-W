@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   
+   <title>Happy aniversarry</title>
+</head>
+
+<body>
+<script>
+function mostrarMensagem() {
+    const msg = document.getElementById("mensagem");
+    
+    msg.style.display = "block";
+
+    setTimeout(() => {
+        msg.style.display = "none";
+    }, 5000); // 5 segundos
+}
+function criarCoracao() {
+    const coracao = document.createElement("div");
+    coracao.innerHTML = "💖";
+    coracao.style.position = "fixed";
+    coracao.style.top = "0";
+    coracao.style.left = Math.random() * 100 + "vw";
+    coracao.style.fontSize = "20px";
+    coracao.style.animation = "cair 3s linear";
+    
+    document.body.appendChild(coracao);
+
+    setTimeout(() => {
+        coracao.remove();
+    }, 3000);
+}
+
+setInterval(criarCoracao, 500);
+
+function atualizarContador() {
+    const agora = new Date();
+    const anoAtual = agora.getFullYear();
+
+    const destino = new Date(`${anoAtual}-06-02T00:00:00`);
+
+    const diferenca = destino - agora;
+
+    if (diferenca <= 0) {
+        document.getElementById("contador").innerHTML = "The big day is here ❤️";
+        return;
+    }
+
+    const dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+    const horas = Math.floor((diferenca / (1000 * 60 * 60)) % 24);
+    const minutos = Math.floor((diferenca / (1000 * 60)) % 60);
+    const segundos = Math.floor((diferenca / 1000) % 60);
+
+    document.getElementById("contador").innerHTML =
+        dias + " days, " +
+        horas + " hours, " +
+        minutos + " min, " +
+        segundos + " sec";
+}
+
+setInterval(atualizarContador, 1000);
+</script>
+</script>
+
+
+
+
+
+
+   <header>
+      <h1>
+         HAPPY TWO YEARS!!!!!!!!!!
+      </h1>
+   </header>
+      <div class="caixa">
+           <p>
+            It has been 2 years since we started dating, and all this time all I have to say is that I love you. 
+            I want to spend 10,000 more years with you. I have never been happier in my life.
+            
+            You are the light in the darkness, the coffee of my day and the hawk of my tuah. 
+            I love you more than everything, my Warren Batista Garnet Boutiller dos Santos.
+            
+            Pretty soon I am going back to Canada just to see your face and hug you really hard… then beat you (I’m joking).
+         </p>
+      </div>
+
+<button onclick="mostrarMensagem()" class="botao">
+   Click here 💌
+</button>
+
+<div id="mensagem" class="caixa" style="display: none;">
+   <p>
+      Surprise!!! I love you more than anything in this world ❤️
+   </p>
+</div>
+
+
+
+<div class="todasfotos">
+   <div class="foto3">
+      <p>My beautiful non brazilian (not yet hehhehhhehe)
+      </p>
+      <img class="fotoface" src="img/warrenbrazuka.jpg" alt="foto">
+      
+
+   </div>
+
+
+
+   <div class="foto2">
+      <p>You are the most handsomeman in this world
+      </p>
+      <img class="fotomusculo" src="img/warrenmusculo.jpg" alt="foto">
+      
+
+   </div>
+
+   <div class="foto3">
+      <p>GORGEOUS MAN ALLLLLL MINE
+      </p>
+      <img class="fotoface" src="img/warrenface.jpg" alt="foto">
+      
+
+   </div>
+</div>
+
+<footer class="rodape">
+   <p>Days until we see each other again 💖</p>
+   <p id="contador"></p>
+</footer>
+
+</body>
+</html>

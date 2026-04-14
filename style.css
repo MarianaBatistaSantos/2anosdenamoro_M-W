@@ -1,0 +1,152 @@
+body {
+    background-image: url('img/shy.jpg');
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+}
+header {
+    background-color: #92374a;
+    text-align: center;
+    padding: 20px;
+    color: #e0c3ca;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    font-size: 30px;
+}
+
+.caixa {
+    background-color: #92374a;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    color: #e0c3ca ;
+    font-size: 20px;
+    animation: aparecer 2s ease-in-out;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.botao {
+    background-color: #92374a;
+    color: #e0c3ca;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+.botao:hover {
+    background-color: #6e2a38;
+}
+
+
+#mensagem {
+    animation: aparecer 0.5s ease-in-out;
+}
+
+@keyframes cair {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+
+.todasfotos {
+   margin-top: 200px;
+}
+
+
+
+.foto {
+    background-color: #f5ecee;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 40%;
+    color: #92374a ;
+    font-size: 20px;
+}
+.fotobrazuka {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left:10px;
+}
+
+.foto2 {
+    background-color: #f5ecee;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 500px;
+    width: 40%;
+    color: #92374a ;
+    font-size: 20px;
+    margin-top: -400px;
+}
+.fotomusculo {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left:10px;
+}
+
+.foto3 {
+    background-color: #f5ecee;
+    border-radius: 10px;
+    padding: 20px;
+    margin-left: 20px;
+    width: 40%;
+    color: #92374a ;
+    font-size: 20px;
+    margin-top: -150px;
+    
+}
+
+.fotoface {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left:10px;
+}
+
+.fotobrazuka, .fotomusculo, .fotoface {
+    transition: transform 0.3s;
+}
+
+.fotobrazuka:hover, .fotomusculo:hover, .fotoface:hover {
+    transform: scale(1.1);
+}
+
+.rodape {
+    background-color: #92374a; /* mesma cor da caixa */
+    color: #e0c3ca;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 20px;
+}
