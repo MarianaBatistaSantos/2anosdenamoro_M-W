@@ -72,68 +72,40 @@ header {
     }
 }
 
-
 .todasfotos {
    margin-top: 200px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   gap: 30px;
 }
 
-
-
-.foto {
+/* TODAS AS CAIXAS DE FOTO */
+.foto, .foto2, .foto3 {
     background-color: #f5ecee;
-    border-radius: 10px;
+    border-radius: 15px;
     padding: 20px;
-    margin: 20px;
-    width: 40%;
-    color: #92374a ;
+    width: 350px;
+    color: #92374a;
     font-size: 20px;
+    text-align: center;
+
+    /* REMOVE BAGUNÇA ANTIGA */
+    margin: 0;
 }
-.fotobrazuka {
-    width: 300px;
+
+/* TODAS AS IMAGENS */
+.fotobrazuka, .fotomusculo, .fotoface {
+    width: 100%;
+    max-width: 300px;
     height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left:10px;
-}
+    border-radius: 15px;
+    margin-top: 15px;
 
-.foto2 {
-    background-color: #f5ecee;
-    border-radius: 10px;
-    padding: 20px;
-    margin-left: 500px;
-    width: 40%;
-    color: #92374a ;
-    font-size: 20px;
-    margin-top: -400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.fotomusculo {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left:10px;
-}
-
-.foto3 {
-    background-color: #f5ecee;
-    border-radius: 10px;
-    padding: 20px;
-    margin-left: 20px;
-    width: 40%;
-    color: #92374a ;
-    font-size: 20px;
-    margin-top: -150px;
-    
-}
-
-.fotoface {
-    width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-    margin-left:10px;
-}
-
 .fotobrazuka, .fotomusculo, .fotoface {
     transition: transform 0.3s;
 }
